@@ -3,9 +3,9 @@ function sldHr(id, ckTime) {
     const oWin = oBox.querySelector('.slide-window');
     oWin.appendChild(oWin.firstElementChild.cloneNode(true));
     oWin.insertBefore(oWin.lastElementChild.previousElementSibling.cloneNode(true), oWin.firstElementChild);
-    const aTab = oWin.querySelectorAll('li');
+    const aTab = oWin.children;
     const oCataLog = oBox.querySelector('.slide-catalog');
-    const aCl = oCataLog.getElementsByTagName('li');
+    const aCl = oCataLog.children;
     const btnLeft = oBox.querySelector('.btn-left');
     const btnRight = oBox.querySelector('.btn-right');
     const oTabWidth = parseInt(getComputedStyle(aTab[0]).width);
